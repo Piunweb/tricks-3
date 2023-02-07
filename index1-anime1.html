@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         }
+         body{
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .main{
+            font-size: 7rem;
+            letter-spacing: 2px;
+            position: relative;
+            font-weight: 30px;
+         }
+         .main span{
+            color: black;
+            mix-blend-mode: color-burn;
+         }
+         .main::before{
+            content: '';
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background-color: rgb(177, 162, 162);
+            animation: light 7s 1s linear alternate infinite;
+         }
+         @keyframes light{
+            0%{left: 0; }
+            50%{left: 85%;}
+            100%{left: 0;}
+         }
+    </style>
+</head>
+<body>
+    <p class="main">
+        <span> PIUNIK ARAKELIAN</span>
+
+    </p>
+</body>
+</html>
